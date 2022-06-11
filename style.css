@@ -74,29 +74,30 @@ margin-left: 30px;
     position: relative;
     display: inline-block;
     text-decoration: none;
+    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-weight: 700;
     margin-right: 20px;
-    transition: color .4s linear;
+    transition: color .3s linear;
 }
 
 .nav__link:after {
     content: "";
     width: 100%;
     height: 4px;
-    background-color: rgb(128, 197, 38);
+    background-color: rgb(0, 86, 247);
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1;
     opacity: 0;
-    transition: opacity .4s linear;
+    transition: opacity .3s linear;
 
 }
 
 .nav__link:hover {
-    color: rgb(128, 197, 38);
+    color: rgb(0, 86, 247);
 }
 .nav__link:hover:after {
     display: block;
@@ -159,11 +160,6 @@ margin-left: 30px;
     transition: 1s;
 
 }
-
-.VK {
-    background: url(../jpg/VK.png);
-}
-
 
 .intro__LSBtns {
     display: flex;
