@@ -447,7 +447,7 @@ margin-left: 30px;
     transition: 0.5s all;
 }
 
-.popup {
+.hireMe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -460,7 +460,7 @@ margin-left: 30px;
     justify-content: space-between;
 }
 
-.popup.active {
+.hireMe.active {
     transform: translate(-50%, -50%) scale(1);
     transition: 0.5s all;
 }
@@ -474,28 +474,28 @@ margin-left: 30px;
 /* Конец важной части */
 /* Далее код для стилизации формы */
 
-.popup__LS {
+.hireMe__LS {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
 
 }
 
-.popup__title {
+.hireMe__title {
     font-weight: 700;
     font-size: 32px;
     font-family: 'Montserrat', sans-serif ;
     text-transform: uppercase;
 }
 
-.popup__subtitle {
+.hireMe__subtitle {
     font-weight: 400;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif ;
     text-transform: uppercase;
 }
 
-.popup__contacts {
+.hireMe__contacts {
     display: inline-flex;
     align-items: center;
     font-weight: 400;
@@ -504,14 +504,14 @@ margin-left: 30px;
 
 }
 
-.popup__email {
+.hireMe__email {
     margin: 20px 0;
     font-weight: 700;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif ;
 }
 
-.popup__email__input {
+.hireMe__email__input {
     margin-top: 5px;
     height: 40px;
     width: 370px;
@@ -523,7 +523,7 @@ margin-left: 30px;
     padding: 15px;
 }
 
-.popup__request__input {
+.hireMe__request__input {
     margin-top: 5px;
     height: 150px;
     width: 370px;
@@ -536,12 +536,12 @@ margin-left: 30px;
     resize: vertical;
 }
 
-.popup__btn__container {
+.hireMe__btn__container {
     display: flex;
     justify-content: flex-end;
     max-width: 370px;
 }
-.popup__button {
+.hireMe__button {
     display: block;
     height: 50px;
     width: 170px;
@@ -556,10 +556,146 @@ margin-left: 30px;
   
 }
 
-.popup__button:hover {
+.hireMe__button:hover {
     background-color: black;
     color: #fff;
     transition: 0.3s;
 
 }
 
+/*------- RESUME--------*/
+
+.resume {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    background: #fff;
+    width: 1200px;
+    padding: 25px;
+    transition: 0.5s all;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.resume.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.close-resume {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.resume__word {
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+
+.resume__btns_container {
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+
+}
+
+.resume__button {
+    display: block;
+    height: 40px;
+    width: 170px;
+    border-radius: 30px;
+    background-color: #fff;
+    text-transform: uppercase;
+    border: 2px rgb(0, 0, 0, .3) solid;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif ;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+  
+  
+}
+
+.resume__button:hover {
+    background-color: black;
+    color: #fff;
+    transition: 0.3s;
+
+}
+
+.resume__content {
+    max-height: 100vh;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.resume__LS {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    border-right: 1px rgb(0, 0, 0, .3) solid;
+  
+
+}
+.resume__RS {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.resume__title {
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 20px 0
+   
+}
+
+.point__date {
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: underline;
+    margin: 20px 0;
+}
+.point__title {
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.point__info {
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.skills {
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.resCenter {
+    margin: 30px auto 10px;
+}
