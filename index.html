@@ -44,9 +44,9 @@
             <div class="intro__part">
                 <div class="intro__LS">
                     <div class="intro__LSText">
-                        <p class="introTextGreetings">Hello, I'm</p>
-                        <p class="introTextInitials">Voloshchyk Nikolai</p>
-                        <p class="introTextProfession">early-junior programmer</p>
+                        <p class="intro__text__greetings">Hello, I'm</p>
+                        <p class="intro__text__initials">Voloshchyk Nikolai</p>
+                        <p class="intro__text__profession">early-junior programmer</p>
                     </div>
                     <div class="intro__LSLinks">
                         <a class="intro__link" href="https://vk.com"><img src="../Portfolio/jpg/VK.png" width="40" 
@@ -72,18 +72,26 @@
         </div> <!-- container--> 
     </div> <!-- intro-->
 
-<!-- PROJECTS-->
+    <div class="projects__nav">
+        <a class="projects__nav__link open__all__projects" href="" >All</a>
+        <a class="projects__nav__link open__web" href="" >Websites</a>
+        <a class="projects__nav__link open__app" href="" >App</a>
+        <a class="projects__nav__link open__interaction" href="" >Interaction</a>
+    </div>
+
+    <!-- PROJECTS-->
 
     <div class="projects">
         <div class="container">
             <div class="project__items">
 
-                <div class="project__item">
+                <!-- PROJECT__ITEM-->
+                <div class="project__item interaction">
                     <div class="project__itemPhoto"></div>
                     <div class="project__itemDescription">
                         <div class="project__itemLS">
                             <div class="project__itemCategory">
-                                category
+                                category: interaction
                             </div>
                             
                             <div class="project__itemTitle">
@@ -99,35 +107,14 @@
                     </div>
                     
                 </div> <!-- PROJECT__ITEM-->
+            
     
-                <div class="project__item">
+                <div class="project__item web">
                     <div class="project__itemPhoto"></div>
                     <div class="project__itemDescription">
                         <div class="project__itemLS">
                             <div class="project__itemCategory">
-                                category
-                            </div>
-                            
-                            <div class="project__itemTitle">
-                                project title    
-                            </div>
-                           
-                        </div>
-    
-                        <div class="project__itemDate">
-                                2018
-                        </div>
-    
-                    </div>
-                    
-                </div> <!-- PROJECT__ITEM-->
-
-                <div class="project__item">
-                    <div class="project__itemPhoto"></div>
-                    <div class="project__itemDescription">
-                        <div class="project__itemLS">
-                            <div class="project__itemCategory">
-                                category
+                                category: web
                             </div>
                             
                             <div class="project__itemTitle">
@@ -144,12 +131,12 @@
                     
                 </div> <!-- PROJECT__ITEM-->
 
-                <div class="project__item">
+                <div class="project__item web">
                     <div class="project__itemPhoto"></div>
                     <div class="project__itemDescription">
                         <div class="project__itemLS">
                             <div class="project__itemCategory">
-                                category
+                                category: web
                             </div>
                             
                             <div class="project__itemTitle">
@@ -166,12 +153,12 @@
                     
                 </div> <!-- PROJECT__ITEM-->
 
-                <div class="project__item">
+                <div class="project__item app">
                     <div class="project__itemPhoto"></div>
                     <div class="project__itemDescription">
                         <div class="project__itemLS">
                             <div class="project__itemCategory">
-                                category
+                                category: app
                             </div>
                             
                             <div class="project__itemTitle">
@@ -188,12 +175,12 @@
                     
                 </div> <!-- PROJECT__ITEM-->
 
-                <div class="project__item">
+                <div class="project__item app">
                     <div class="project__itemPhoto"></div>
                     <div class="project__itemDescription">
                         <div class="project__itemLS">
                             <div class="project__itemCategory">
-                                category
+                                category: app
                             </div>
                             
                             <div class="project__itemTitle">
@@ -210,12 +197,12 @@
                     
                 </div> <!-- PROJECT__ITEM-->
 
-                <div class="project__item">
+                <div class="project__item interaction">
                     <div class="project__itemPhoto"></div>
                     <div class="project__itemDescription">
                         <div class="project__itemLS">
                             <div class="project__itemCategory">
-                                category
+                                category: interaction
                             </div>
                             
                             <div class="project__itemTitle">
@@ -230,60 +217,19 @@
     
                     </div>
                     
-                </div> <!-- PROJECT__ITEM-->
-
-                <div class="project__item">
-                    <div class="project__itemPhoto"></div>
-                    <div class="project__itemDescription">
-                        <div class="project__itemLS">
-                            <div class="project__itemCategory">
-                                category
-                            </div>
-                            
-                            <div class="project__itemTitle">
-                                project title    
-                            </div>
-                           
-                        </div>
-    
-                        <div class="project__itemDate">
-                                2018
-                        </div>
-    
-                    </div>
-                    
-                </div> <!-- PROJECT__ITEM-->
-
-                <div class="project__item">
-                    <div class="project__itemPhoto"></div>
-                    <div class="project__itemDescription">
-                        <div class="project__itemLS">
-                            <div class="project__itemCategory">
-                                category
-                            </div>
-                            
-                            <div class="project__itemTitle">
-                                project title    
-                            </div>
-                           
-                        </div>
-    
-                        <div class="project__itemDate">
-                                2018
-                        </div>
-    
-                    </div>
-                    
-                </div> <!-- PROJECT__ITEM-->
+                
+               
 
 
             </div> <!-- PROJECT__ITEMS-->
-            <div class="btnContainer"> 
-                <button class="intro__button">load more work</button>
-            </div>
+        
             
         </div> <!-- container-->
     </div> <!-- projects-->
+    
+    <div class="btnContainer"> 
+        <button class="intro__button">load more work</button>
+    </div>
 
     <div class="aboutMe">
         <div class="container">
@@ -320,7 +266,14 @@
             <div class="comment__photo"></div>
             <div class="comment__name">Cock Goose</div>
             <div class="comment__company">rooster</div>
-            <div class="comment__rating">5 stars</div>
+            <div class="comment__rating">
+                <img src="../Portfolio/jpg/star.svg" height="25px" width="25px" alt="">
+                <img src="../Portfolio/jpg/star.svg" height="25px" width="25px" alt="">
+                <img src="../Portfolio/jpg/star.svg" height="25px" width="25px" alt="">
+                <img src="../Portfolio/jpg/star.svg" height="25px" width="25px" alt="">
+                <img src="../Portfolio/jpg/star-half.svg" height="25px" width="25px" alt="">
+                
+            </div>
         </div>
 
     </div> <!-- comments-->
